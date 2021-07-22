@@ -38,3 +38,270 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+.doporucujeme {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    color: white;
+}
+
+.hlavni-recept::before,
+.recepty::before {
+    content:'';
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hlavni-recept,
+.recepty {
+    z-index: 5;
+    position: relative;
+}
+
+.hlavni-recept {
+    background-image: url("images/burger.jpg");
+    background-size: cover;
+    background-position: center, center;
+    width: auto;
+    min-height: 200px;
+}
+
+
+.recept.recept2 {
+    background-image: url("images/sushi.jpg");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    min-height: 90px;
+}
+
+.recept.recept3 {
+    background-image: url("images/rajcata.jpg");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    min-height: 90px;
+}
+
+.recept.recept4 {
+    background-image: url("images/kure.jpg");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    min-height: 90px;
+}
+
+.recept.recept5 {
+    background-image: url("images/grilovani.jpg");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    min-height: 90px;
+}
+
+.recept-nazev1 {
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;;
+    font-weight: 800;
+    text-align: center;
+    margin: 130px 0px 10px 0px;
+}
+
+.recept-meta1 {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.recept-nazev {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin: 0;
+    padding: 40px 0 10px 10px;
+}
+
+.recept-meta {
+    margin: 2px 10px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (min-width: 480px) {
+    .doporucujeme {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0;
+        color: white;
+    }
+
+    .hlavni-recept {
+        background-image: url("images/burger.jpg");
+        background-size: cover;
+        background-position: center, center;
+        width: auto;
+        min-height: 250px;
+    }
+
+    .row1 {
+        display: flex;
+        flex-direction: line;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .recept.recept2 {
+        background-image: url("images/sushi.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        min-height: 150px;
+    }
+    
+    .recept.recept3 {
+        background-image: url("images/rajcata.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        min-height: 150px;
+    }
+
+    .recept-nazev {
+        font-size: 22px;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+        text-align: left;
+        margin: 0;
+        padding: 60px 0 10px 10px;
+    }
+    
+    .recept-meta {
+        margin: 2px 10px;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .row2 {
+        display: flex;
+        flex-direction: line;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .recept.recept4 {
+        background-image: url("images/kure.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        min-height: 150px;
+    }
+    
+    .recept.recept5 {
+        background-image: url("images/grilovani.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        min-height: 150px;
+    }
+
+    @media (min-width: 860px) {
+        .doporucujeme {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: relative;
+            color: white;
+            width: 100%;
+
+        }
+        .hlavni-recept {
+            background-image: url("images/burger.jpg");
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            width: 50%;
+            justify-content: space-evenly;
+            position: relative;
+        }
+        
+        .row1,
+        .row2 {
+            flex-direction: line;
+            display: flex;
+        }
+        
+        .recept.recept2 {
+            background-image: url("images/sushi.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            min-height: 200px;
+        }
+
+        .recept.recept3 {
+            background-image: url("images/rajcata.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            min-height: 200px;
+        }
+        
+        .recept.recept4 {
+            background-image: url("images/kure.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            min-height: 200px;
+        }
+        
+        .recept.recept5 {
+            background-image: url("images/grilovani.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            min-height: 200px;
+        }
+        .recept-nazev1 {
+            font-size: 48px;
+            font-family: 'Raleway', sans-serif;;
+            font-weight: 800;
+            bottom: 0px;
+            left: 20px;
+            position: absolute;
+        }
+
+        .recept-nazev {
+            font-size: 28px;
+            font-weight: 800;
+            font-family: 'Raleway', sans-serif;
+            text-align: left;
+            margin: 0;
+            padding: 120px 0 10px 10px;
+        }
+        
+    }
+}
